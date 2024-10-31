@@ -6,23 +6,22 @@ background-color: #212121;
 
 
 .parent {
-	display: flex;
-	flex-wrap: wrap;
-	 gap:20px;
-	 height:95vh;
-	 justify-content: center;
-	 align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+   gap:20px;
+   justify-content: center;
+   align-items: center;
 }
 
 
 .card{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 400px;
-	height:500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height:auto;
     background: rgb(16,16,18,1);
-
+color: aliceblue;
  box-shadow: 4px 6px 14px #00000036;
  box-shadow: 4px 6px 14px #00000036;
   border-radius: 15px;
@@ -34,177 +33,55 @@ background-color: #212121;
   transition: transform 0.3s ease; /* Add transition property for smooth effect */
 
 }
-	
+.navbor{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
 
-.card:hover {
-    transform: scale(1.1); /* Scale up the card on hover */
+.navbor a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 22px;
 }
 
 
-#clock {
-	display: flex;
-	flex-direction: column;
-	font-family: 'Oswald', sans-serif;
-	color: aliceblue;
-	font-size: 70px;
-	font-weight: 500;
+#typing-text {
+  font-size: 22px;
+  text-align: start;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  width: 500px;
+  display: inline-block;
 
-		
-  }
+}
+
+
   button {
-	margin-top: 20px;
-	font-size: 1em;
+  margin-top: 20px;
+  font-size: 1em;
 
   }
 
-  
+
   @media screen and (max-width: 768px) {
 
-	.card{
-		width: 100%;
+  .card{
+    width: 100%;
 
-	}
+    transition-property:none; /* Add transition property for smooth effect */
+
+  }
+
+
+  .card:hover {
+      transform: none; /* Scale up the card on hover */
+  }
 
 }
 
 
-/* The switch - the box around the slider */
-.switch {
-	font-size: 17px;
-	position: relative;
-	display: inline-block;
-	width: 3.5em;
-	height: 2em;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-	opacity: 0;
-	width: 0;
-	height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-	position: absolute;
-	cursor: pointer;
-	inset: 0;
-	background: #9fccfa;
-	border-radius: 50px;
-	transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .slider:before {
-	position: absolute;
-	content: "";
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 2em;
-	width: 2em;
-	inset: 0;
-	background-color: white;
-	border-radius: 50px;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-	transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .switch input:checked + .slider {
-	background: #0974f1;
-  }
-  
-  .switch input:focus + .slider {
-	box-shadow: 0 0 1px #0974f1;
-  }
-  
-  .switch input:checked + .slider:before {
-	transform: translateX(1.6em);
-  }
-
- .header{
-	font-family: 'Oswald', sans-serif;
-	font-size: small;
-	color: aliceblue;
- }
-  
- .section{
-	font-family: 'Oswald', sans-serif;
-	font-size: small;
-	color: aliceblue;
- }
 
 
 
- .carousel {
-	position: relative;
-	max-width: 600px;
-	margin: auto;
-	overflow: hidden;
-  }
-  
-  .carousel-inner {
-	display: flex;
-  }
-  
-  .carousel-item {
-	flex: 0 0 auto;
-	width: 100%;
-	transition: transform 0.5s ease;
-  }
-  
-  img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-  }
-  
-  button {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background: none;
-	border: none;
-	font-size: 24px;
-	cursor: pointer;
-	color: #ffeaea;
-  }
-  
-  .prev {
-	left: 10px;
-  }
-  
-  .next {
-	right: 10px;
-  }
-  
-  .typing-container {
-	margin: 50px auto;
-	width: 80%;
-	text-align: center;
-  }
-  
-  #typing-text {
-	border-right: 2px solid #000; /* Cursor effect */
-	white-space: nowrap; /* Prevent text from wrapping */
-	overflow: hidden; /* Hide overflowing text */
-	animation: typing 1s steps(40, end), blink-caret 0.5s infinite;
-  }
-  
-  /* Typing animation */
-  @keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
-  }
-  
-  /* Cursor blink animation */
-  @keyframes blink-caret {
-	from, to { border-color: transparent }
-	50% { border-color: #00000000 }
-  }
-  
-		
-
-
-
-  
 
